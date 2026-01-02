@@ -2,6 +2,8 @@
 use http::Uri;
 use thiserror::Error;
 
+#[expect(deprecated)]
+pub use kube_core::ErrorResponse;
 pub use kube_core::Status;
 
 /// Possible errors from the [`Client`](crate::Client)
